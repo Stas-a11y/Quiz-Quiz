@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #f7c4f1 0%,
+    #f7cece 25%,
+    #fffbde 50%,
+    #d7ffc9 75%,
+    #b3d2f7 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Noto Serif", serif;
+}
+
+.button {
+  font-family: 'Noto Serif', serif; /* Подключение шрифта */
+  font-size: 16px; /* Размер текста */
+  font-weight: 700; /* Жирность текста */
+  padding: 10px 20px; /* Внутренний отступ */
+  border: none; /* Без рамки */
+  border-radius: 5px; /* Скругленные углы */
+  cursor: pointer; /* Изменение курсора на указатель */
+}
+
+
+
+header {
+  width: 100%;
+  background: #D8BFD8;
+}
+
+
+.logo {
+  width: 464px;
+  height: 75px;
+  margin-left: 10px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column; /* Расположить элементы по вертикали */
+  align-items: center;
+  justify-content: space-between;
+
+  width: 720px;
+  height: 512px;
+
+  background: #d9d9d9;
+  border: 5px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.main-text {
+  width: 675px;
+  height: 115px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.main-description {
+  width: 375px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.quiz-topic-btn {
+  padding: 10px 20px;
+  background-color: #469fff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.start-quiz-btn {
+  width: 250px;
+  height: 65px;
+  text-decoration: Lato;
+  background: rgba(169, 216, 155, 0.78);
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.start-quiz-btn:hover{
+  background-color: rgb(88, 158, 88);
+}
+
+.start-quiz-btn:active{
+  background-color: rgb(187, 235, 187);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+
+  background: #D8BFD8;
+}
+
+.question-btn {
+  width: 317.5px;
+  height: 40px;
+
+  background: rgba(234, 159, 204, 0.98);
+  border-radius: 15px;
+}
+
+.succsess-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 317.5px;
+  height: 40px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(159, 234, 179, 0.98) 0%,
+    rgba(160, 223, 151, 0.98) 0.01%,
+    rgba(153, 225, 163, 0.98) 45%,
+    rgba(106, 132, 89, 0.98) 100%
+  );
+  border: 3px solid #000000;
+  border-radius: 15px;
+}
+
+.leave-btn {
+  width: 125px;
+  height: 65px;
+
+  background: rgba(216, 155, 158, 0.78);
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.leave-btn:hover{
+  background-color: rgb(146, 77, 77);
+}
+
+.leave-btn:active{
+  background-color: rgb(189, 160, 160);
+}
+
+.try-again-btn {
+  width: 125px;
+  height: 65px;
+
+  background: rgba(155, 216, 213, 0.78);
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.try-again-btn:hover{
+  background-color: rgb(97, 153, 170);
+}
+
+.try-again-btn:active{
+  background-color: #9dc7d1;
+}
+
+.return-btn {
+  width: 125px;
+  height: 65px;
+
+  background: rgba(169, 216, 155, 0.78);
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.return-btn:hover{
+  background-color: rgb(105, 175, 105);
+}
+.return-btn:active{
+  background-color: #d7ffc9;
+}
+
+.correct-incorrect-answers {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.quiz-topic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 317.5px;
+  height: 40px;
+
+  background: #9ecdde;
+  border-radius: 15px;
+}
+
+.result-btns-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.answer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 317.5px;
+  height: 40px;
+
+  background: rgba(234, 159, 204, 0.98);
+  border-radius: 15px;
+}
+
+.answer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.answer-question-btn {
+  width: 250px;
+  height: 65px;
+  margin-bottom: 10px;
+
+  background: rgba(169, 216, 155, 0.78);
+  border-radius: 8px;
+}
+
+.results-upper-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.results-lower-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Контейнер меню */
+.topic {
+  position: relative;
+  display: inline-block;
+}
+
+/* Кнопка */
+.quiz-topic-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quiz-topic-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Меню тем (скрыто по умолчанию) */
+.topic-menu {
+  display: none; /* Меню скрыто по умолчанию */
+  position: absolute;
+  top: 100%; /* Расположено под кнопкой */
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Пункты меню */
+.dropdown-item {
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Отображение меню при активном состоянии */
+.topic-menu.active {
+  display: block;
+}
